@@ -9,7 +9,7 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 
 After the plugin is installed: 
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/TheLukaDragar/fri-dark-theme-v2/master/fri-dark.user.css)
 
 
 
