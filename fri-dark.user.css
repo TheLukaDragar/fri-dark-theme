@@ -10,8 +10,8 @@
 @license      unlicense
 
 @preprocessor default
-@var color    primaryAccentColour  "Primary accent colour"   rgb(253, 151, 31)
-@var color    secondaryAccentColour  "Secondary accent colour"   #F92672
+@var color    primaryAccentColour  "Primary accent colour"  #0ac25d
+@var color    secondaryAccentColour  "Secondary accent colour"   #26f988
 @var color    thirdAccentColour  "Secondary accent colour"   #66d9ef
 
 ==/UserStyle== */
@@ -21,6 +21,7 @@
 .dropdown-item:active
 {
 	color: #fff !important;
+     background-color:#26f988!important
 }
 
 #yui_3_17_2_1_1582669233698_110
@@ -33,11 +34,27 @@
 {
 	margin: 10px;
 }
+    
+:root{
+
+    --primary:#26f988!important
+
+
+
+}
+    a {
+ color:#26f988 !important;
+ text-decoration:none;
+ background-color:transparent
+}
+    
+    
+    
 
 /* Background area pri levi strani */
 [data-region="drawer"]
 {
-	background-color: #2b2b2b66 !important;
+	background-color: #23272a !important;
 }
 
 /* Navbar */
@@ -59,7 +76,8 @@
 /* Menu itemi na levi in boxi na main pagu */
 .list-group-item
 {
-	background-color: #2d2d2d !important;
+	background-color: #2c2f33 !important;
+    
 }
 
 .list-group-item-action
@@ -79,7 +97,7 @@
 .groupinfobox,
 .well
 {
-	background-color: #2d2d2d !important;
+	background-color: #2c2f33 !important;
 }
 
 .btn-secondary,
@@ -94,6 +112,7 @@
 {
 	background-color: hsla(0, 0%, 0%, .6) !important;
 	border: 1px solid #585858;
+    color:#26f988 !important
 }
 
 .bg-gray
@@ -166,7 +185,8 @@
 .list-group-item.active
 {
 	box-sizing: border-box;
-	border: 0px solid var(--primaryAccentColour) !important;
+	border-color: var(--primaryAccentColour) !important;
+    
 	background-color: var(--primaryAccentColour) !important;
 	transition: 0.3s;
 }
@@ -176,11 +196,20 @@
 	color: #fff !important;
 	background-color: var(--primaryAccentColour) !important;
 	opacity: 0.52;
+    
 }
-
+    
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+     background-color: #26f988 !important ;
+    border-color: #1ebd68 !important;
+    -webkit-box-shadow: 0 0 0 0.2rem #26f988;
+    box-shadow: 0 0 0 0.2rem #26f988;
+}
+    
 #region-main
 {
-	background-color: #242424a6 !important;
+	background-color: #2c2f33 !important;
 }
 
 div#region-main.has-blocks.mb-3
@@ -204,6 +233,9 @@ div#region-main.has-blocks.mb-3
 	border: 1px solid var(--thirdAccentColour) !important;
 }
 
+    
+.text
+    
 /* Mihn strip na levi, ko si na predmetu / per teden */
 .course-content .current::before
 {
@@ -308,7 +340,7 @@ img
 {
 	color: #fff !important;
 	background-color: #373737f5;
-	border-color: var(--thirdAccentColour);
+	border-color: var(--thirdAccentColour)!important;
 }
 
 .bg-dark
@@ -424,6 +456,27 @@ img
 {
 	border-color: #565656;
 }
+.btn-outline-primary {
+ color:#26f988 !important;
+ border-color:#26f988!important;
+}
+.btn-outline-primary:hover {
+ color:#fff;
+ background-color:#26f988 !important;
+ border-color:#26f988 !important
+}
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+ color:#26f988 !important;
+ background-color:transparent
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+ color:#fff;
+ background-color:#26f988 !important;
+ border-color:#26f988 !important
+}
 
 [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"] > span
 {
@@ -468,8 +521,9 @@ span.unread
 }
 
 .page-item.active .page-link
-{
-	border-color: var(--primaryAccentColour);
+{   
+    background-color:#26f988 !important;
+	border-color: var(--primaryAccentColour)!important;
 }
 
 .userlist table#participants td
@@ -553,6 +607,12 @@ html
 {
 	background-color: var(--primaryAccentColour);
 }
+    .custom-control-input:checked~.custom-control-label::before {
+ color:#fff;
+ border-color:#26f988 !important;
+ background-color:#26f988 !important
+}
+    
 
 .page-item disabled
 {
@@ -713,9 +773,11 @@ table.flexible thead th,
 
 .btn-link
 {
-	color: var(--secondary) !important;
+	color: #26f988 !important;
 }
-
+.thing:focus {
+  outline-color: #26f988 !important;;
+}
 .custom-select
 {
 	border-radius: 3px;
@@ -725,16 +787,29 @@ table.flexible thead th,
 	color: white;
 }
 
-.custom-select:focus
-{
-	border-color: var(--primaryAccentColour) !important;
-}
 
-.course-content ul li.section.main
-{
-	border-bottom: 1px solid #dee2e6b5;
-	margin-top: 15;
+    .aabtn.focus, .btn-link.focus, .nav-link.focus, .atto_link_button.focus, [role="button"].focus, .list-group-item-action.focus, input[type="checkbox"].focus, input[type="radio"].focus, input[type="file"].focus, input[type="image"].focus, .sr-only-focusable.focus, a.dropdown-item.focus, a.dropdown-toggle.focus, .modal-dialog[tabindex="0"].focus, .moodle-dialogue-base .closebutton.focus, button.close.focus, .aabtn:focus, .btn-link:focus, .nav-link:focus, .atto_link_button:focus, [role="button"]:focus, .list-group-item-action:focus, input[type="checkbox"]:focus, input[type="radio"]:focus, input[type="file"]:focus, input[type="image"]:focus, .sr-only-focusable:focus, a.dropdown-item:focus, a.dropdown-toggle:focus, .modal-dialog[tabindex="0"]:focus, .moodle-dialogue-base .closebutton:focus, button.close:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem #26f98891 !important;
+    box-shadow: 0 0 0 0.2rem #26f98891 !important;
+        
+    }
+    
+    .aalink.focus, #page-footer a:not([class]).focus, .arrow_link.focus, a:not([class]).focus, .activityinstance>a.focus, .aalink:focus, #page-footer a:not([class]):focus, .arrow_link:focus, a:not([class]):focus, .activityinstance>a:focus {
+    outline: .2rem solid transparent;
+    color: #212529;
+    background-color: #23272a;
+    -webkit-box-shadow: 0 -0.2rem #ffd1d5, 0 0.2rem #343a40;
+    box-shadow: 0 -0.2rem #23272a, 0 0.2rem #343a40;
 }
+    
+    .aabtn.focus, .btn-link.focus, .nav-link.focus, .atto_link_button.focus, [role="button"].focus, .list-group-item-action.focus, input[type="checkbox"].focus, input[type="radio"].focus, input[type="file"].focus, input[type="image"].focus, .sr-only-focusable.focus, a.dropdown-item.focus, a.dropdown-toggle.focus, .modal-dialog[tabindex="0"].focus, .moodle-dialogue-base .closebutton.focus, button.close.focus, .aabtn:focus, .btn-link:focus, .nav-link:focus, .atto_link_button:focus, [role="button"]:focus, .list-group-item-action:focus, input[type="checkbox"]:focus, input[type="radio"]:focus, input[type="file"]:focus, input[type="image"]:focus, .sr-only-focusable:focus, a.dropdown-item:focus, a.dropdown-toggle:focus, .modal-dialog[tabindex="0"]:focus, .moodle-dialogue-base .closebutton:focus, button.close:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 -0.2rem #ffd1d5, 0 0.2rem #343a40;
+        box-shadow: 0 -0.2rem #23272a, 0 0.2rem #343a40;}
+    
+
+
 
 .border,
 .filemanager-container,
@@ -1086,7 +1161,10 @@ input[type="text"]
 .list-group-item-action:hover,
 .list-group-item-action:focus
 {
-	color: #2f2f2f !important;
+    
+     border: none!important;
+    outline:none!important;
+	
 	text-decoration: none;
 	background-color: #ffffff7a;
 }
@@ -1296,8 +1374,9 @@ img.userpicture
 body
 {
 	color: #ffffffd9 !important;
-	background-image: var(--bg-img) !important;
-	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
+	/*background-image: var(--bg-img) !important;
+	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');*/
+    background-color: #23272a !important;
 }
 
 /* Free logo - inverted colours */
