@@ -47,6 +47,24 @@
  text-decoration:none;
  background-color:transparent
 }
+	
+	 .table {
+    width: 100%;
+    margin-bottom: 1rem;
+     color: #fff; 
+}
+    
+    .table-hover tbody tr:hover {
+    color: #26f988;
+    background-color: rgba(0,0,0,.075);
+}
+    
+    .usermenu:focus-within, div.dropdown-item:focus-within {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: 0 0 0 0.2rem  #1ebd68;
+}
+    
     
     
     
