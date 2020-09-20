@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/header.png" width="500" height="auto"/>
+  <img src="https://raw.githubusercontent.com/TheLukaDragar/fri-dark-theme-v2/master/images/header.png" width="500" height="auto"/>
 </p>
 A dark theme for the FRI moodle online classroom based on the popular Monokai colour scheme. Requires the Stylus web browser extension. Supports auto-updating.
 
