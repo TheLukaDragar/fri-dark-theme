@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/TheLukaDragar/fri-dark-theme-v2/master/images/header.png" width="500" height="auto"/>
 </p>
+Original author: https://github.com/janvasiljevic/fri-dark-theme
 A dark theme for the FRI moodle online classroom based on fri-dark and Discord theme. Requires the Stylus web browser extension. Supports auto-updating.
 
 ##  :gear: Installation
