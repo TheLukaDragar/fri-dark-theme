@@ -49,6 +49,10 @@
 
 
 }
+.generaltable tbody tr:hover {
+    color: rgba(255, 255, 255,0.8)!important;
+    background-color: rgba(0,0,0,.075);
+}
     a {
  color:#26f988 !important;
  text-decoration:none;
