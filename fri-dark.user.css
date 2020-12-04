@@ -53,6 +53,11 @@
     color: rgba(255, 255, 255,0.8)!important;
     background-color: rgba(0,0,0,.075);
 }
+	.qn-question {
+     background-color: #e4f1fa00!important;
+}
+    .qn-info {
+        background: #eee0!important;}
     a {
  color:#26f988 !important;
  text-decoration:none;
