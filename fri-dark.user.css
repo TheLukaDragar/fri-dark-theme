@@ -1568,4 +1568,11 @@ a > .instancename:hover
 	color: #fff !important;
 	text-decoration: none !important;
 }
+.ace-tm {
+	background-color: #32393d;
+	color: #26f988;
+}
+#page-question-type-coderunner  .que.coderunner table.coderunner-test-results .header, .que.coderunner table.coderunnerexamples .header, .que.coderunner tr.r0 td {
+	background-color: #32393d;
+}
 }
