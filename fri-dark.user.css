@@ -1554,7 +1554,7 @@ ul[style="padding: 0px; margin: 0px 0px 10px 25px;"]
 ul,
 span:not(.hljs.css)
 {
-	color: #ffffffd9 !important;
+	color: #ffffffd9;
 }
 
 a > .instancename
@@ -1567,5 +1567,66 @@ a > .instancename:hover
 {
 	color: #fff !important;
 	text-decoration: none !important;
+}
+
+.ace-tm
+{
+	background-color: #32393d;
+        color: #ffffff97
+}
+
+.ace-tm .ace_keyword
+{
+	color: var(--primaryAccentColour) !important
+}
+
+.ace-tm .ace_keyword.ace_operator
+{
+	color: var(--secondaryAccentColour) !important
+}
+
+.ace-tm .ace_constant, .ace-tm .ace_string, .ace-tm .ace_support
+{
+	color: var(--thirdAccentColour) !important
+}
+
+.ace-tm .ace_comment
+{
+	color: #ffffff68 !important;
+}
+
+.ace-tm .ace_cursor
+{
+	color: #ffffff88;
+}
+
+.ace-tm .ace_indent-guide
+{
+	background: none;
+}
+
+.que.coderunner table.coderunner-test-results .header,
+.que.coderunner table.coderunnerexamples .header,
+.que.coderunner tr.r0 td
+{
+	background-color: #32393d;
+}
+
+.que.coderunner tr.r1 td
+{
+	background-color: #4c4f53;
+}
+
+.que.coderunner div.ui_wrapper {
+	background-color: #3c3c3c;
+}
+
+.que.coderunner .ace_gutter {
+	background-color: #3c3c3c;
+	color: white;
+}
+
+.ace-tm .ace_gutter-active-line {
+	background-color: #555555;
 }
 }
